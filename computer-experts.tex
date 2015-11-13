@@ -2,8 +2,8 @@
 \usepackage{setspace}
 \usepackage[utf8]{inputenc}
 \usepackage[english]{babel}
-\usepackage{raleway}
-\renewcommand*\familydefault{\sfdefault} %% Only if the base font of the document is to be sans serif
+%\usepackage{raleway}
+%	\renewcommand*\familydefault{\sfdefault} %% Only if the base font of the document is to be sans serif
 \usepackage{graphicx} % Required for including images
 \usepackage{enumitem} % Required for manipulating the whitespace between and within lists
 \usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
@@ -13,140 +13,148 @@
 \usepackage{endnotes}
 \let\footnote=\endnote
 
-\author{Luis Felipe Rosado Murillo \& Christopher Kelty}
-\title{Studying Computers and their Hackers Ethnographically}
+\usepackage{authblk}
+\author[1]{Luis Felipe Rosado Murillo}
+\author[2]{Christopher Kelty}
+\affil[1]{Berkman Center for Internet and Society, Harvard}
+\affil[2]{UCLA Anthropology and Center for Society and Genetics}
+\renewcommand\Affilfont{\itshape\small}
+
+\title{Studying With Computer Collectives Ethnographically}
+
 \date{}
 
 \begin{document}
 \maketitle
-\section{abstract}
+\section{Abstract}
+In this article, we will describe well-established words of advice 
+on ethnographic method but also new insights into the specificities 
+of computer expert collectives that call us to rethink ethnographic 
+research design and practice. We discuss issues of building rapport, 
+creating empathy, dealing with different expectations, and conflicts 
+of interpretation with examples from our field research and suggestions
+for advancing new forms of collaboration through the study of emergent 
+forms of technical and political participation in the domain computing. 
+As a concluding argument, we elaborate on the importance of the practice
+and the study of collaboration in the context of science and technology 
+studies more broadly.
 
 \doublespacing
-\section{introduction}
+\section{Introduction}
 
 Doing ethnography in/of/with computer collectives is and is not
 different from established understandings of ethnographic practice in
-contemporary anthropology. In this article, we will describe some
-old-fashioned words of advice on method but also some new insights
+contemporary anthropology. In this article, we will describe 
+well-established words of advice on method but also new insights 
 into the specificities of computer expert collectives that call us to
 rethink ethnographic research design and practice.  At the outset it
 is necessary to specify that we discuss here fieldwork amongst all
 those sets of people who consider themselves technical experts in some
-broad sense: professional engineers, software architects and
-developers, entrepreneurs,  hackers, makers, technologists, geeks, nerds,
-amateur scientists, hobbyists and so on.  Doing fieldwork amongst such
-people has a different practice and a different object than doing
-fieldwork on \emph{users}, even if the putative boundary between
-experts and users is blurry, it is nonetheless constantly reinstated and
-renegotiated.  To focus here is also to hold digital technology as
-\emph{substance} more than as \emph{media}.  There are already
-different schools and traditions of emphasizing the relationship of
-the cultural and the digital, and we try here to distinguish them.
-
-Our discussion is based on our own field experiences among computer
-scientists, computer hackers, Free Software developers, hardware
-engineers and hacker activists, free culture and open access
-activists, lawyers, engineers, academics and others.  When rethinking
-ethnographic practice in the context of computer expert collectives,
-we draw from the contemporary developments in the domain of
-multi-sited ethnography (\cite{Fischer1999,Marcus1995,Burrell2009}
-Fischer--multi-locale; Marcus 1996, 2001;
-Burrell; Falzon et al. 2009) and ethnographic studies of virtual
-worlds (\cite{BOELLSTORFF2008,Miller2001} Horst and Miller 2012; Boestorff et.
-al. 2013), as well as established ethnomethodological frames in STS (Suchman,
-Forsythe, Akrich, Latour, etc). % Not sure we want to start right here
-                                % with the lit review--- might move
-                                % this section down a but. 
-
-%%  We don't do this yet, but we could:
-
-% As a concluding argument, we propose the importance of the
-% practice and the study of collaboration and ethnographic composition
-% (Kelty 200) in the context of science and technology studies more
-% broadly.
+broad sense: professional engineers, software developers, hackers, 
+makers, amateur scientists and technologists from many technoscientific
+domains.  Doing fieldwork amongst such groups demands different research 
+practices than doing fieldwork on \emph{users}, even if the putative 
+boundary between experts and users is blurry, it is nonetheless constantly
+reinstated and renegotiated.  This difference in focus is also meant to 
+hold digital technology as relational \emph{substance} more than as \emph{media}.  
+There are already different schools and traditions of emphasizing the 
+relationship of the cultural, the material, the political, and the digital, 
+and we try here to distinguish them.
 
 Key questions in any kind of ethnographic research are questions of
-\emph{rapport} and \emph{complicity} (Geertz Cockfight, Marcus 199x).  These are not
+\emph{rapport}, \emph{empathy} and \emph{complicity}.  These are not
 merely methodological questions of access but concern the cultivation
-of ethical relationships, the reliance on and sometimes competition
-with other people who may or may not share the same goals and
-ideals.  Relationships in the field are built from sustained, often intense
-interactions that create binding ties and are
-characteristic of anthropological field research. The course of a
-research project depends on these relationships, if it is not entirely 
-determined by them.  What one makes of these relationships, and the
-insights gained thereby constitutes the core of any ethnography worthy
-of the name---but the nature of these relationships is obviously
-different in different places:  what is true of interactions with the
-Gawa of New Guinea is not necessarily true of interactions with the
-Bororo of the Amazon, much less of those with chinese hackers in a
-Shenzhen makerspace. 
+of ethical relationships, the reliance upon and sometimes competition
+with multiple constituents who may or may not align with the goals of 
+a dialogic ethnographic inquiry. Relationships in the field are built 
+from sustained and often intense interactions that create binding ties 
+and are characteristic of anthropological field research. The course of 
+a project depends on these relationships, if it is not entirely 
+determined by them.  What one makes of these relationships, and the 
+insights gained thereby constitutes the core of any ethnography worthy 
+of the title---but the nature of these relationships is obviously different 
+in different places:  what is true of interactions with the Gawa of New 
+Guinea is not necessarily true of interactions with the Bororo of the 
+Amazon, much less of those with young engineers in a makerspace 
+in Shenzhen, Tokyo, or New York.
 
-Before building rapport, the issue of ``entering the
-field''---inadequately summed up in the word ``access''--- presents
-itself as the first challenge as conceived in the anthropological
-canon.  Modes of presentation, perceptions and usages of differences
-of identity and background (socioeconomic, political, ethnic, gender,
-etc.), veiled and overt asymmetries in relations of power---all
-account for multiple determinations of the ethnographic encounter. One
-can be invisible or too visible, being the object of constant
-attention and/or suspicion. Regardless of the circumstances of a first
-encounter, one cannot ``just show up'' to do fieldwork.  When it comes
-either to the study of established or of marginal communities of
-computer technologists, there are specific issues at stake. 
+Before building ties, the question of ``entering the field''---inadequately 
+summed up in the guise ``access''---presents itself as the first challenge 
+as conceived in the anthropological canon.  Modes of presentation, perceptions 
+and usages of differences of cultivation, self-identification, and belonging 
+along socioeconomic, political, ethnic, and gender lines, veiled and overt 
+asymmetries in relations of power---all account for multiple determinations of 
+the ethnographic encounter. One can be invisible or too visible, the object 
+of constant attention and/or suspicion at a shared workshop, computer lab, or
+online space where one can be identified for its nickname or avatar image.  
+Regardless of the circumstances of a first encounter, one cannot ``just show up'' 
+to do fieldwork.  When it comes either to the study of sociotechnical phenomena 
+in established or marginal communities of computer technologists, there are 
+specific issues at stake.
 
-Further, it should be clear that we also take a somewhat ``hard line''
-on what counts as ethnography.  Many different kinds of researchers
-claim to do ethnographic research, and the standards for what counts
-vary significantly across disciplines.  In some disciplines,
-``ethnography'' is one tool in a bag of methods used to investigate
-specific kinds of questions.  In cultural anthropology, by contrast,
-there is rarely any choice in the matter---ethnography is the presumed
-method, but the possible \emph{objects of study} are often far more
-ecumenically defined.  In some disciplines, ethnography is equivalent
-to ``unstructured interviews'' or periodic discussions with a
-particular population of people; in some it is defined as a series of
-\emph{in situ} observations of social or cultural life, with or
-without interaction; and in many disciplines there remains intense
-anxiety about the \emph{objectivity} of the method, the dangers of
-influencing the site or object, or the presence of bias, variously
-understood\footnote{We follow a classic definition of objectivity in
-  the social sciences, offered famously by Weber: that objectivity in
-  the observation of social phenomena consists in observing the
-  conceptual connections between ideas, and not the actual connection
-  amongst things, a distinction that sets this kind of research apart
-  from, among other things, behavioral observation}.  Suffice it to
-say that these issues also tend to vary by object and (sub)
-discipline--- medical anthropology has its own standards for
+
+%Further, it should be clear that we also take a somewhat ``hard line''
+%on what counts as ethnography.  Many different kinds of researchers
+%claim to do ethnographic research, and the standards for what counts
+%vary significantly.  In some disciplines, ``ethnography'' is one tool in a 
+%bag of methods used to investigate specific kinds of questions.  In cultural 
+%anthropology, by contrast, it is a fundamental practice from which theory and
+%method are made mutually constitutive. There is rarely any choice in the matter---
+%ethnography is the presumed method, but the possible \emph{objects of study} are 
+%often far more ecumenically defined.  In some disciplines, ethnography is 
+%equivalent to ``unstructured interviewing'' or periodic discussions with a
+%particular group; in some it is defined as a series of \emph{in situ} observations
+%of social or cultural life, with or without interaction; and in many disciplines 
+%there remains intense anxiety about the \emph{objectivity} of the method, the 
+%presumable dangers of influencing the site or object with the so-called \emph{bias}, 
+%variously understood\footnote{We follow a classic definition of objectivity in
+%  the social sciences, offered famously by Weber: that objectivity in
+%  the observation of social phenomena consists in observing the
+%  conceptual connections between ideas, and not the actual connection
+%  amongst things, a distinction that sets this kind of research apart
+%  from, among other things, behavioral observation}.  
+
+  
+Suffice it to say that questions of method also tend to vary greatly by object 
+and (sub)discipline--- medical anthropology has its own standards for
 interaction with and the development of relationships with patients,
-doctors and other caregivers or healers, just ethnographers studying
-kinship do.  But for most anthropologists, ethography is the result of
-entanglements in social and cultural life that are engaged in because
-they reveal something that the actors themselves cannot or do not
-articulate to themselves or others.  Those entanglements can rely on
-involvement and complicity, or on the conscious adoption of
-``adjacency'' (Rabinow), but not on distance, critical or otherwise,
-that takes social life to be observable without engagement in it. 
-
-% also: cultivation of ethical ideals, questioning of the ethics
-% of informants.
+doctors, and other caregivers or healers, just as ethnographers working in
+the domain of psychological anthropology do when developing particular
+techniques of person-centered ethnography (Hollan 1992) and the study of 
+emotional states and expressions (Throop 2009). But for most anthropologists, 
+ethography is the result of entanglements in social and cultural life that are 
+engaged in because they reveal something of ourselves and others, which
+cannot be easily articulated. Those entanglements can rely on involvement 
+and complicity, or on the conscious adoption of ``adjacency'' (Rabinow), 
+but not on distance, critical or otherwise, that takes social life to be 
+observable without engagement in it.
 
 In this article we will discuss these issues with examples from our
 field research and suggestions for advancing new forms of
 collaboration through the study of emergent forms of technical and
-political participation in the domain computing.
+political participation in the domain of computing.  When rethinking
+ethnographic practice in the context of computer expert collectives,
+we draw from the contemporary developments in the domain of
+multi-sited ethnography (\cite{Fischer1999,Marcus1995,Burrell2009}
+Fischer 1999; Marcus 1996, 2001; Burrell 2009; Falzon et al. 2009) and 
+ethnographic studies of virtual worlds (\cite{BOELLSTORFF2008,Miller2001} 
+Horst and Miller 2012; Boestorff et. al. 2013), as well as established 
+ethnomethodological frames in STS (Suchman,Forsythe, Akrich, Latour, etc).
+As a concluding argument, we propose the importance of the practice and the 
+study of collaboration and ethnographic composition (Kelty 2008) in the 
+context of science and technology studies more broadly.
 
-\section{Specificities in the Study of Computer Collectives}
+\section{Specificities in the Study with Computer Collectives}
 
 In previous work we have articulated ethnographic fieldwork as, in
 part, an ``epistemological encounter'' (Kelty 2008) in which the
 experience of participating in the social, ethical and cultural lives
 of others necessarily confronts one with revising one's own theories
 and beliefs.  Those theories and beliefs can be unstated, as part of
-one's own culture (``making the familiar strange''), or imported as
-part of training and intellectual discipline (``theory-laden
-observations'').  If fieldwork experience does not produce an
-encounter of this sort, then it can have little more than a
+one's own culture (``making the familiar strange'' as the canonical
+formula goes), or imported as part of training and intellectual discipline 
+(``theory-laden observations'').  If fieldwork experience does not produce 
+an encounter of this sort, then it can have little more than a
 confirmatory or extremely weak hypothesis-testing function, not one of
 discovery or conceptual refinement or invention.  More recently in
 anthropology, a similar claim has been made about an ``ontological
@@ -738,7 +746,7 @@ that one has to be open to the surprise of the unexpected.
 % interactions.\\[2\baselineskip]
 
 \subsection{Staring at Computer Screens
-  or Holding Soldering Irons, Ethnographies on and off line}
+  or Holding Soldering Irons: Ethnographies On and Off line}
 
 Ethnographic studies of computing are situated in between these two
 purportedly distinctive realms of activity \emph{as one} -- granted
@@ -752,7 +760,6 @@ own right (Turkle 1984; Hine 2000; Boelstorff 2006) or challenge the
 assumption that a new sphere of sociability demanded reformulating our
 understanding of field research (Miller and Slater 2000; Malaby
 2008).
-
 
 This form of dualism is no longer sustainable or even useful for
 fieldwork research among computer collectives: it fails invariably to
