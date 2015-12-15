@@ -7,11 +7,14 @@
 \usepackage{graphicx} % Required for including images
 \usepackage{enumitem} % Required for manipulating the whitespace between and within lists
 \usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
-%\usepackage[round]{natbib}
+%\usepackage{natbib}
 \usepackage{breakurl}
 \usepackage[breaklinks]{hyperref}
 \usepackage{endnotes}
 \let\footnote=\endnote
+
+\usepackage[style=authoryear]{biblatex}
+\addbibresource{computer-experts.bib}
 
 \usepackage{authblk}
 \author[1]{Luis Felipe Rosado Murillo}
@@ -136,9 +139,9 @@ we draw from the contemporary developments in the domain of
 multi-sited ethnography
 (\cite{Fischer1999,Marcus1995,Burrell2009,Falzonetal2009,Rabinow2008})
 and ethnographic studies of virtual worlds
-(\cite{BOELLSTORFF2008,Miller2001,HorstandMiller2012,BoestorffNardi2013}),
+(\cite{BOELLSTORFF2008,Miller2001,Horst2012,boellstorff2012ethnography}),
 as well as established ethnomethodological frames in STS
-\cite{Forsythe1999,forsythe2001studying,Latoour2007,Suchman1987,Suchman1999}.  As a concluding argument, we
+\cite{Forsythe1999,forsythe2001studying,Latour2007,Suchman1987,Suchman1999}.  As a concluding argument, we
 propose the importance of the practice and the study of collaboration
 and ethnographic composition \cite{Kelty2008a} in the context of
 science and technology studies more broadly.
@@ -159,7 +162,7 @@ hypothesis-testing function, not one of discovery or conceptual
 refinement or invention.  More recently in anthropology, a similar
 claim has been made about the need for an ``ontological turn'' with
 radical conceptual work by which anthropologists encounter different
-modes of being \cite{VdC,Latour,Kohn,Holmrad}, especially those that
+modes of being \cite{ViveirosdeCastro2014,Latour2013,Kohn2013,Henare2007}, especially those that
 are radically different from the philosophical and theoretical
 traditions in which most anthropologists are trained.  There is
 clearly a relation to the claim of an ``epistemological encounter''
@@ -200,10 +203,10 @@ level of international global circulation of technical experts,
 certain ethnicities and nationalities invoke immediate judgements or
 expectations, as has been the case for instance of migrating Indian software
 experts \cite{xiang2007}, or reflect more local concerns with ethnic
-identification \cite{Takhteyev2012,Burrell,Chan}.  Reconfigurations of
+identification \cite{Takhteyev2012,Burrell2012,Chan2013}.  Reconfigurations of
 ethnicity in user-space are arguably much better studied and
 understood through the lens of anthropological studies of personhood
-and race \cite{BOELLSTORFF2008,Miller,Nakamura}.
+and race \cite{BOELLSTORFF2008,Miller2011,Nakamura2013}.
 
 In respect to gender identifications and roles such issues
 express themselves as forms of competitive comparison, exclusion
@@ -213,7 +216,7 @@ in one case a prestigious engineer and hackerspace founder, when
 comparing herself to another prestigious woman engineer declared,
 ``she has a bigger penis than mine,'' largely in order to indicate and
 compare levels of technical knowledge or prowess.  The language of
-comparison is often playful (cf. \cite{Coleman2012} on joy) and, at
+comparison is often playful (cf. \cite{Coleman2013} on joy) and, at
 times, harmful, and may include both self-reflexive markers of gender,
 class, race and religious differentiation as well as unrecognized and
 unstated assumptions built into the very commonplace joking and
@@ -230,9 +233,9 @@ Linus Torvalds, an influential and controversial Free Software
 developer, in the context of the Linux kernel development
 mailing-list.  Such expressions disguise other voices: they express
 both an anxiety about masculinity traditionally denied to brain-work
-and ``nerdy'' occupations \cite{BenjaminNugent}, at the same time that
+and ``nerdy'' occupations \cite{Nugent2008}, at the same time that
 they re-establish gender distinctions around being ``close to the
-machine'' \cite{EllenUllman} or technically proficient at ever more
+machine'' \cite{Ullman1997} or technically proficient at ever more
 arcane and often useless pursuits.  Such assertions are very much like
 the classic portrait that Veblen drew, where ``device drivers'' and
 ``having code accepted in the kernel'' or ``having a Open hardware
@@ -240,7 +243,7 @@ project that is widely used'' are ``trophies'' that signal invidious
 distinctions with respect to the value of labor.  By contrast, what is
 considered menial work--- documentation, code-testing, stocking the
 hackerspace and cleaning it---become ``drudgery'' all too often
-associated with the feminine \cite{Veblen-Leisure}.
+associated with the feminine \cite{Veblen1934}.
 
 The fieldworker who enters without such skills therefore, is quite
 likely to experience these distinctions from below---as a newbie or
@@ -290,7 +293,7 @@ more permanent socialization spaces such as cybercafes, hackerspaces,
 and maker spaces or transient but no less important events such
 documentation fests and collective hacking sessions held for Free and
 Open Source development projects
-\cite{ColemanAQ,BurrellGhana}. Ultimately, given power imbalances, it
+\cite{Coleman2010,Burrell2012}. Ultimately, given power imbalances, it
 is important to observe, as the anthropological \emph{sensus communis}
 dictates, one cannot just ``show up'' but rather, must find ways to
 enter webs of relationship (which involve computer technologies and
@@ -326,7 +329,7 @@ critical experts (whether hackers, lawyers, scientists, doctors),
 asking for interviews or surveys questionnaires to be filled out can
 be a mine-field.  Awareness of the ``metapragmatic'' conditions of the
 research interview or interaction is essential to for making sense of
-what is communicated in any given setting \cite{BriggsLearning}.  The
+what is communicated in any given setting \cite{Briggs1986}.  The
 example below illustrates one of these cases which deserves full
 consideration since it is common in the experience of hackerspaces.
 
@@ -366,7 +369,7 @@ demand for) an exchange of ideas and arguments that might satisfy
 those involved in some form---in this it mirrors the experience of
 some who study theological debate through ethnography and are often
 called upon to enter into such debates
-\cite{FischerAbedi,Susanharding,Tuhami,HirschkindDawa}.  Being
+\cite{Fischer1990,Harding2001,Crapanzano1980,Hirschkind2006}.  Being
 accepted can sometimes be contingent on a willingness to defend one's
 ideas amongst potential informants, not just amongst academic peers.
 
@@ -476,7 +479,7 @@ tease apart, so as to denounce, efface or negate the sociocultural and
 historical foundations of their practices.  This is as much an object
 of inquiry for us as a practical dilemma and a contentious topic
 regarding our participation and collaboration with computer
-collectives. It speaks to the ``worth'' of our work \cite{Stark} and
+collectives. It speaks to the ``worth'' of our work \cite{Stark2009} and
 our presence (ultimately our ``worth'' as persons) which responds to
 criteria that is foreign to the legitimization, validation, and
 recognition criteria we are subjected in academia.  It consists in a
@@ -610,8 +613,8 @@ faster than it can even be recorded.  This however, is nothing new for
 cultural anthropologists, and is often as subject of debate--from the
 salvage ethnography of the early 20th century, to Bateson's
 experiments in capturing social life in \emph{Naven}
-\cite{Naven,MarcusOnNaven} to the debates about Anthropology as
-cultural critique \cite{MarcusFischer,WritingCulture}.
+\cite{Bateson1958,Marcus1985} to the debates about Anthropology as
+cultural critique \cite{Marcus1999a,Clifford1986}.
 
 The sense of being overwhelmed by data,is related to a different
 aspect of temporality that also frequently afflicts researchers.  This
@@ -758,9 +761,9 @@ off-line. Earlier research work has been grounded in the premise that
 sociocultural processes, forms of belonging, and the very conditions
 of fieldwork research would substantially change with the increased
 usage of online communication as to study the online experience in its
-own right \cite{Turkle1984,Hine2000,Boelstorff2006} or challenge the
+own right \cite{Turkle1984,Hine2000,BOELLSTORFF2008} or challenge the
 assumption that a new sphere of sociability demanded reformulating our
-understanding of field research \cite{MillerandSlater2000,Malaby2008}.
+understanding of field research \cite{Miller2001,Malaby2009}.
 
 This form of dualism is may longer be sustainable or, for our
 purposes, even useful for fieldwork research among collectives of
@@ -816,7 +819,7 @@ specificity is important to emphasize due to its overdetermination of
 field research among collectives of digital experts: technology is not only a
 medium (for political speech for instance) but also substance (for
 self-fashioning and for the fashioning of alternatives, prefigurations
-\cite{Graeber-prefig} or ``concrete utopias'' for example \cite{bloch-hope,Broca}. 
+\cite{Leach2013} or ``concrete utopias'' for example \cite{Bloch1986,Broca2012}. 
 
 
 % commented the following paragraph out because I think it opens up
@@ -886,7 +889,9 @@ collaborative construction of digital infrastructures to further
 collaborative research among ourselves and the constituents of our
 projects (eg \cite{FortunandFortun2015}).
 
-\bibliography{computer-experts}
-\bibliographystyle{plain}
+%\bibliography{computer-experts}
+%\bibliographystyle{agsm}
+
+\printbibliography
 
 \end{document}
